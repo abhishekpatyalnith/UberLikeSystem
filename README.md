@@ -1,4 +1,4 @@
-# UBER
+# UBERLikeProject
 
 A Spring boot project which can onboard cab drivers and let the customers use the service. The cab drivers come into the system landscape by registering. The fare calculation is purely dynamic and is based on both the time and the distance travelled.
 The properties are kept configurable.
@@ -22,36 +22,39 @@ mvn spring-boot:run
 ### API's exposed
 http://localhost:8090/uber/launchCab
 
-{
-	"cabType":"default",
-	"licencseNumber":"hp-22-2399",
-	"location":{
-		"x":4,
-		"y":4
+	{
+		"cabType":"default",
+		"licencseNumber":"hp-22-2399",
+		"location":{
+			"x":4,
+			"y":4
+		}
 	}
-}
 
 
 http://localhost:8090/uber/allocateRide
 
-{
-	"rider":{
-		"name":"abhishek",
-		"gender":"male"
+
+	{
+
+		"rider":{
+			"name":"abhishek",
+			"gender":"male"
+			
+		},
 		
-	},
-	"location":{
-		"x":4,
-		"y":2
+		"location":{
+			"x":4,
+			"y":2
+		}
 	}
-}
 http://localhost:8090/uber/finishRide
 
-{
-	"cabId":1,
-	"location":{
-		"x":6,
-		"y":2
+	{
+		"cabId":1,
+		"location":{
+			"x":6,
+			"y":2
+		}
 	}
-}
 
